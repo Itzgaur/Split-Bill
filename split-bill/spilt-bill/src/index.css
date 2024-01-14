@@ -1,0 +1,241 @@
+/* color pallete {
+    backgroud : #f3f0ff
+    elements: #b197fc
+    hover:#d0bfff
+    
+  {showAddFriend ? (
+        <NewFriendForm
+          onShowFriend={handleShowFriend}
+          onAddFriend={handleAddFriend}
+        />
+      ) : (
+        <AddNewButton onShowFriend={handleShowFriend} />
+      )}
+
+    text colors: #343a40
+    */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Serif";
+  background-color: #f3f0ff;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+  width: 100%;
+  margin-bottom: 32px;
+
+  /* flex-direction: column; */
+}
+
+h1 {
+  font-weight: 400;
+  color: #343a40;
+}
+
+.friendList {
+  border-radius: 5px;
+  /* background-color: #f3f0ff; */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+  overflow: scroll;
+  /* height: 50%; */
+  max-height: 70%;
+}
+
+.friendList::-webkit-scrollbar {
+  display: none;
+}
+
+.splitForm {
+  height: 60%;
+  background-color: beige;
+  width: 30%;
+}
+
+.friend {
+  display: flex;
+  margin-bottom: 16px;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.friend:hover {
+  background-color: #d0bfff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.profile {
+  /* display: inline-block; */
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.detail {
+  text-align: left;
+}
+
+.status {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.friendButton {
+  background-color: #fff;
+  border: 3px solid #b197fc;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  /* text-transform: uppercase; */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 22px;
+  width: 100px;
+}
+
+.friendButton:hover {
+  background-color: #b197fc;
+  /* border: 3px solid #fff; */
+  cursor: pointer;
+  /* border: 5px solid black; */
+}
+
+.form-hidden {
+  display: none;
+}
+
+.splitForm {
+  background-color: #d0bfff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border-radius: 7px;
+
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.formEntry {
+  display: flex;
+  /* width: 90%; */
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 10%;
+}
+
+.formTitle {
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.negative {
+  color: red;
+  font-weight: 500;
+}
+
+.positive {
+  color: green;
+  font-weight: 500;
+}
+
+input {
+  height: 25px;
+  border-radius: 3px;
+  border: none;
+}
+
+input:hover,
+.selectOption:hover {
+  background-color: #f3f0ff;
+  /* cursor: alias; */
+  /* border: none; */
+}
+
+.selectOption {
+  width: 39%;
+  height: 25px;
+  border-radius: 3px;
+  border: none;
+}
+
+.formButton {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.addButton {
+  background-color: #fff;
+  border: 3px solid #b197fc;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  padding: 10px;
+  border-radius: 22px;
+}
+.addButton:hover {
+  background-color: #b197fc;
+  cursor: pointer;
+}
+
+.newFriend {
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #d0bfff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 32px;
+}
+
+.addField {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .newFriend button {
+  margin-left: auto;
+} */
+
+.addField .newImage {
+  width: 65%;
+}
+
+/* .newImage {
+  width: 50%;
+}
+
+.newImage:hover {
+  background-color: #d0bfff;
+} */
