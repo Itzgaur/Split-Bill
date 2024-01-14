@@ -1,3 +1,7 @@
+# Final look of the application
+![image](https://github.com/Itzgaur/Split-Bill/assets/105581908/bb52b34f-51d6-4be5-89c3-02bf1a9f59e1)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
